@@ -1,0 +1,100 @@
+.container1{
+  margin: 4% 50%;
+  width: 350px;
+  height: auto;
+  justify-content: center;
+}
+
+.container2{
+  display: grid;
+  gap: 10px;
+  height: 450px;
+  padding: 20px;
+  grid-template-areas: 
+  "display display display  display"
+  "clear   split   multiply substract"
+  "seven   eight   nine      add"
+  "four    five    six       add"
+  "one     two     three     equal"
+  "zero    zero    point     equal ";
+  background-color: #FBBEBE ;
+  border-radius: 5px;
+}
+
+/*AREAS NAMES*/
+.display{
+  grid-area: display;
+}
+.clear{
+  grid-area: clear;
+}
+.split{
+  grid-area: split;
+}
+.multiply{
+  grid-area: multiply;
+}
+.substract{
+  grid-area: substract;
+}
+.seven{
+  grid-area: seven;
+}
+.eight{
+  grid-area: eight;
+}
+.nine{
+  grid-area: nine;
+}
+.add{
+  grid-area: add;
+}
+.one{
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+}
+.zero{
+  grid-area: zero;
+}
+.point{
+  grid-area: point;
+}
+.equal{
+  grid-area: equal;
+}
+
+.display{
+  font-size: 20px;
+  text-align: end;
+  border-radius: 4%;
+  border: solid 3px #F596A1;
+  background-color: #FEE8E8;
+}
+
+.digit{
+  font-size: 20px;
+  font-weight: 400;
+  border: solid 1px ;
+  border-radius: 4%;
+  background-color: #DE5767;
+  border: solid 1px #F596A1;
+  &:hover{
+    background-color: #CF5160;
+  }
+}
+
+.number{
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4%;
+  background-color: #ED828F;
+  border: solid 1px #F596A1;
+  &:hover{
+    background-color: #DF717E;
+  }
+}
