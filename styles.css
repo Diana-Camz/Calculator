@@ -1,19 +1,19 @@
 .container1{
   margin: 4% 50%;
   width: 350px;
-  height: auto;
   justify-content: center;
 }
 
 .container2{
   display: grid;
   gap: 10px;
+  /*width: fit-content;*/
   height: 450px;
   padding: 20px;
   grid-template-areas: 
   "display display display  display"
-  "clear   split   multiply substract"
-  "seven   eight   nine      add"
+  "clear   erase   divide    multiply"
+  "seven   eight   nine      substract"
   "four    five    six       add"
   "one     two     three     equal"
   "zero    zero    point     equal ";
@@ -28,8 +28,11 @@
 .clear{
   grid-area: clear;
 }
-.split{
-  grid-area: split;
+.erase{
+  grid-area: erase;
+}
+.divide{
+  grid-area: divide;
 }
 .multiply{
   grid-area: multiply;
@@ -69,18 +72,23 @@
 }
 
 .display{
-  font-size: 20px;
+  font-size: 25px;
   text-align: end;
-  border-radius: 4%;
+  border-radius: 7px;
+  padding: 10px;
+  height: 55px;
+  font-family: 'Brygada 1918', serif;
   border: solid 3px #F596A1;
   background-color: #FEE8E8;
 }
 
-.digit{
+
+.sign, .erase, .clear{
   font-size: 20px;
   font-weight: 400;
   border: solid 1px ;
   border-radius: 4%;
+  font-family: 'Brygada 1918', serif;
   background-color: #DE5767;
   border: solid 1px #F596A1;
   &:hover{
@@ -92,9 +100,21 @@
   font-size: 20px;
   font-weight: 400;
   border-radius: 4%;
+  font-family: 'Brygada 1918', serif;
   background-color: #ED828F;
   border: solid 1px #F596A1;
   &:hover{
     background-color: #DF717E;
   }
+}
+
+#preValue{
+  /*border: solid 1px red;*/
+  height: 30px;
+}
+
+#currValue{
+  /*border: solid 1px green;*/
+  height: 30px;
+
 }
