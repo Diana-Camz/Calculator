@@ -95,6 +95,9 @@
     background-color: #CF5160;
   }
 }
+.active-sign{
+  background-color: #CF5160;
+}
 
 .number{
   font-size: 20px;
@@ -106,6 +109,9 @@
   &:hover{
     background-color: #DF717E;
   }
+}
+.active-number{
+  background-color: #DF717E;
 }
 
 #preValue{
