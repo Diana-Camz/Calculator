@@ -33,7 +33,6 @@ class Display {
   }
 
   doCalculation(type){
-    
     this.operatorType !== "equal" && this.calculate();
     this.operatorType = type;
     this.preValue = this.currValue || this.preValue;
@@ -52,6 +51,6 @@ class Display {
 
 
     if(isNaN(currValue) || isNaN(preValue)) return
-    this.currValue = this.calculator[this.operatorType](preValue, currValue);
+    this.currValue = this.calculator[this.operatorType](preValue, currValue).toString();
   }
 }
