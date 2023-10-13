@@ -1,6 +1,6 @@
 # Calculator
 
-## Proyect Description
+## Project Description
 
 This repository contains a calculator created with HTML, CSS, and JavaScript. It's a calculator that you can use by clicking on each button or by using it with the numeric keys on your keyboard.
 
@@ -11,9 +11,9 @@ This repository contains a calculator created with HTML, CSS, and JavaScript. It
 ## Installation
 
 1. Clone this repository:
-   `git clone https://github.com/Diana-Camz/Calculator.git`
-
-2. Visit `http://localhost:3000` in your web browser to see the application in action.
+   `git clone https://github.com/Diana-Camz/Calculator.git`.
+   
+2. Open the project in your code editor and visualize it in the browser using Live Server.
 
 ## See this Proyect
 You can view this project on the following website: `https://diana-camz-calculator.netlify.app/`
